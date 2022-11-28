@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gunluk3"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnyaz"
+        android:layout_width="183dp"
+        android:layout_height="69dp"
+        android:text="YAZMAYA BAŞLA"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:backgroundTint="#8D6D67 "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="296dp"
+        android:layout_height="304dp"
+        android:background="#D9D0C1"
+        android:focusedMonthDateColor="@color/kahve"
+        android:selectedWeekBackgroundColor="@color/kahve"
+        android:unfocusedMonthDateColor="@color/kahve"
+        android:visibility="visible"
+        android:weekNumberColor="@color/kahve"
+        android:weekSeparatorLineColor="@color/kahve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

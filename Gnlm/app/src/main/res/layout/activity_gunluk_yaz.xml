@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gunluk3"
+    tools:context=".GunlukYaz">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edttarih"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/white"
+            android:inputType="date"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Tarih girin" />
+
+        <EditText
+            android:id="@+id/edtbaslik"
+            android:textColorHint="@color/white"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/edttarih"
+            android:hint="Başlık girin" />
+
+        <EditText
+            android:id="@+id/edtmetin"
+            android:textColorHint="@color/white"
+            android:textStyle="italic"
+            android:layout_width="390dp"
+            android:inputType="textMultiLine"
+            android:layout_height="180dp"
+            android:textColor="@color/white"
+            android:hint="Metin girin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/edtbaslik"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="368dp"
+            android:layout_height="329dp"
+            android:layout_below="@id/btndon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#CAB099"
+            android:cacheColorHint="@color/white"
+            android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp" />
+
+        <Button
+            android:id="@+id/btnkaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtmetin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="6dp"
+            android:text="KAYDET"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            app:backgroundTint="#8D6D67 " />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnmuzik"
+            android:text="MÜZİK ÇAL"
+            android:layout_below="@id/edtmetin"
+            android:layout_toRightOf="@id/btnkaydet"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            app:backgroundTint="#8D6D67 "/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btndurdur"
+            android:text="MÜZİĞİ DURDUR"
+            android:layout_below="@id/edtmetin"
+            android:layout_toRightOf="@id/btnmuzik"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            app:backgroundTint="#8D6D67 "/>
+
+        <Button
+            android:id="@+id/btndon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnmuzik"
+            android:layout_marginLeft="120dp"
+            android:text="ANASAYFAYA DÖN"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            app:backgroundTint="#8D6D67 " />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
